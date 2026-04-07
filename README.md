@@ -9,14 +9,17 @@
 为高龄重症失能患者构建低成本、高安全性的个人数字护理辅助设备，实现 24 小时生命监测、防压疮管理及渐进式康复训练。
 
 ## 系统工程架构 (System Architecture)
+    ![Project Guardian System Architecture](docs/assets/system_architecture.png)
 - **感知层 (Perception):** IMU 动捕集群 + 生理指标传感器。
 - **计算层 (Compute):** 端侧大模型 (LLM) 进行状态评估与异常检测。
 - **执行层 (Execution):** 柔性外骨骼 + 安全有限状态机 (Safe FSM)。
 
 ## 研发路线图 (Roadmap)
+    ![Cyber Caregiver Scenario](docs/assets/cyber_caregiver_scenario.png)
 - [ ] **Phase 1: 赛博护工** - 数据链路与防褥疮预警算法。
 - [ ] **Phase 2: 柔性唤醒** - 基础外骨骼执行与 ROM 维持。
 - [ ] **Phase 3: 钢铁支撑** - 卧姿到站姿的 FSM 安全平缓过渡。
+    ![Exoskeleton Rehabilitation](docs/assets/exoskeleton_rehab.png)
 
 ## 协作规范
 - 本项目采用 AI 辅助开发流，详情请查看 `/agent` 目录下的自动化逻辑。
