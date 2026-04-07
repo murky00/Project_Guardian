@@ -1,3 +1,30 @@
+# Project Guardian
+
+> 基于动捕外骨骼与端侧AI的居家高龄重症康复护理系统
+
+![Status: Active](https://img.shields.io/badge/Status-Development-brightgreen)
+![CI/CD](https://img.shields.io/badge/CI-SelfHosted-blue)
+
+## 核心价值 (Project Vision)
+为高龄重症失能患者构建低成本、高安全性的个人数字护理辅助设备，实现 24 小时生命监测、防压疮管理及渐进式康复训练。
+
+## 系统工程架构 (System Architecture)
+- **感知层 (Perception):** IMU 动捕集群 + 生理指标传感器。
+- **计算层 (Compute):** 端侧大模型 (LLM) 进行状态评估与异常检测。
+- **执行层 (Execution):** 柔性外骨骼 + 安全有限状态机 (Safe FSM)。
+
+## 研发路线图 (Roadmap)
+- [ ] **Phase 1: 赛博护工** - 数据链路与防褥疮预警算法。
+- [ ] **Phase 2: 柔性唤醒** - 基础外骨骼执行与 ROM 维持。
+- [ ] **Phase 3: 钢铁支撑** - 卧姿到站姿的 FSM 安全平缓过渡。
+
+## 协作规范
+- 本项目采用 AI 辅助开发流，详情请查看 `/agent` 目录下的自动化逻辑。
+- 请查阅 `CONTRIBUTING.md` (待补充) 了解 PR 与 Issue 提交规范。
+
+## ⚠️ 免责声明
+本项目为开源工程探索，非医疗器械。所有康复行为必须在医学评估下进行。
+
 # Project_Guardian
 基于动捕外骨骼与端侧AI的居家高龄重症康复护理系统
 
@@ -41,7 +68,7 @@
     *   在医学指标完全允许下，挑战 FSM 从卧到站的极致平缓过渡。
 
 ## 🤝 5. 社区协作与参与 (Join Us)
-*   **Discord Server:**[此处放置您的Discord邀请链接]
+*   **Discord Server:**[Discord邀请链接]
 *   **Tech Stack:** C++ / Python / ROS / PyTorch Lite / Arduino or ESP32 (可按实际修改)
 *   欢迎算法工程师、硬件创客、康复理疗师、临床医生加入跨界讨论！
 
